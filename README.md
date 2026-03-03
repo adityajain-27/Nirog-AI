@@ -308,8 +308,8 @@ Built at **[Hackathon Name]** — 🥈 2nd Place
 |---|---|---|
 | **Aditya Jain** (Lead) | Project architecture · Full-stack backend · AI integration · Deployment | [@adityajain-27](https://github.com/adityajain-27) |
 | **Samay Parashar** | AI agent pipeline (`files/`) | [@samay-username](https://github.com/samay-username) |
-| **Sweety** | Frontend development · UI design | [@Sweety3106](https://github.com/Sweety3106) |
-| **Hardik Agrawal** | Frontend development · UI design | [@hardik-username](https://github.com/hardik-username) |
+| **Sweety** | Frontend development · UI design · Testing & QA | [@Sweety3106](https://github.com/Sweety3106) |
+| **Hardik Agrawal** | Frontend development · UI design · Testing & QA | [@hardik-username](https://github.com/hardik-username) |
 
 - GitHub (Lead): [@adityajain-27](https://github.com/adityajain-27)
 
