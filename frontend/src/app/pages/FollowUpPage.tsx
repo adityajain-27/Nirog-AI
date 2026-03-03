@@ -64,8 +64,8 @@ export default function FollowUpPage() {
 
         // Credit gate: only for patients with known low balance
         if (!isDoctor && credits !== null && credits < 150) {
-            toast.error('Not enough credits. Please buy more to generate a report.');
-            navigate('/buy-credits');
+            toast.error('Not enough credits. Click your credit balance to top up.');
+            navigate('/patient/symptom');
             return;
         }
 
@@ -77,8 +77,8 @@ export default function FollowUpPage() {
             // Deduct credits after successful analysis
             const { success, insufficientCredits } = await deductCredits();
             if (!success && insufficientCredits) {
-                toast.error('Not enough credits. Please buy more to generate a report.');
-                navigate('/buy-credits');
+                toast.error('Not enough credits. Click your credit balance to top up.');
+                navigate('/patient/symptom');
                 return;
             }
 

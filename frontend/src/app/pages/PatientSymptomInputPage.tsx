@@ -94,8 +94,7 @@ export default function PatientSymptomInputPage() {
     e.preventDefault();
 
     if (credits !== null && credits < 150) {
-      toast.error('Not enough credits! You need 150 credits to generate a report.');
-      navigate('/buy-credits');
+      toast.error('Not enough credits. You need 150 credits to generate a report. Click your credit balance to top up.');
       return;
     }
 
@@ -139,13 +138,13 @@ export default function PatientSymptomInputPage() {
           <div className="flex items-center gap-4">
             <ThemeToggle />
             {credits !== null && (
-              <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border ${credits >= 150
+              <Link to="/buy-credits" className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-opacity hover:opacity-80 ${credits >= 150
                 ? 'bg-teal-50 dark:bg-teal-950/40 border-teal-200 dark:border-teal-800 text-teal-700 dark:text-teal-300'
                 : 'bg-red-50 dark:bg-red-950/40 border-red-200 dark:border-red-800 text-red-700 dark:text-red-300'
                 }`}>
                 <Coins className="w-3.5 h-3.5" />
                 {credits} cr &middot; {Math.floor(credits / 150)} report{Math.floor(credits / 150) !== 1 ? 's' : ''} left
-              </div>
+              </Link>
             )}
             <Link to="/">
               <Button variant="ghost" size="sm">
