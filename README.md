@@ -304,12 +304,12 @@ This project is licensed under the MIT License.
 
 Built at **[Hackathon Name]** — 🥈 2nd Place
 
-| Name | Role |
-|---|---|
-| **Aditya Jain** (Lead) | Project architecture · Full-stack backend · AI integration · Deployment |
-| **Samay Parashar** | AI agent pipeline (`files/`) |
-| **Sweety** | Frontend development · UI design |
-| **Hardik Agrawal** | Frontend development · UI design |
+| Name | Role | GitHub |
+|---|---|---|
+| **Aditya Jain** (Lead) | Project architecture · Full-stack backend · AI integration · Deployment | [@adityajain-27](https://github.com/adityajain-27) |
+| **Samay Parashar** | AI agent pipeline (`files/`) | [@samay-username](https://github.com/samay-username) |
+| **Sweety** | Frontend development · UI design | [@Sweety3106](https://github.com/Sweety3106) |
+| **Hardik Agrawal** | Frontend development · UI design | [@hardik-username](https://github.com/hardik-username) |
 
 - GitHub (Lead): [@adityajain-27](https://github.com/adityajain-27)
 
