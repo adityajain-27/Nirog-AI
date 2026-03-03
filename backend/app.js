@@ -7,6 +7,7 @@ import assessRoutes from "./routes/assess.js";
 import doctorRoutes from "./routes/doctor.js";
 import creditsRoutes from "./routes/credits.js";
 import intakeRoutes from "./routes/intake.js";
+import contactRoutes from "./routes/contact.js";
 
 dotenv.config();
 connectDB();
@@ -27,6 +28,7 @@ app.use("/api/assess", assessRoutes);
 app.use("/api/doctor", doctorRoutes);
 app.use("/api/credits", creditsRoutes);
 app.use("/api/intake", intakeRoutes);
+app.use("/api/contact", contactRoutes);
 
 
 app.get("/", (req, res) => {

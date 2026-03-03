@@ -392,12 +392,20 @@ export default function LandingPage() {
 
 
 
-      {/* Footer */}
       <footer className="relative z-10 border-t border-slate-200 dark:border-slate-800 py-12 bg-white/50 dark:bg-slate-950/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-6 text-center text-sm text-slate-600 dark:text-slate-400">
           <div className="flex justify-center gap-6 mb-6">
             <Link to="/about" className="hover:text-slate-900 dark:hover:text-white transition-colors">About</Link>
             <Link to="/contact" className="hover:text-slate-900 dark:hover:text-white transition-colors">Contact</Link>
+          </div>
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <span className="text-slate-400">✉</span>
+            <a
+              href="mailto:adityaalba27@gmail.com"
+              className="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-medium transition-colors"
+            >
+              adityaalba27@gmail.com
+            </a>
           </div>
           <p className="mb-4 max-w-2xl mx-auto">
             <strong>Note:</strong> Nirog Ai is a clinical decision support tool.

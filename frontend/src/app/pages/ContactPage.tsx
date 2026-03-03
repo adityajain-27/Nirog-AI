@@ -31,18 +31,37 @@ const teamMembers = [
     }
 ];
 
+const NODE_BASE_URL = import.meta.env.VITE_NODE_URL || 'http://localhost:5000';
+
 export default function ContactPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const form = e.currentTarget;
+        const data = {
+            firstName: (form.querySelector('#firstName') as HTMLInputElement)?.value,
+            lastName: (form.querySelector('#lastName') as HTMLInputElement)?.value,
+            email: (form.querySelector('#email') as HTMLInputElement)?.value,
+            subject: (form.querySelector('#subject') as HTMLInputElement)?.value,
+            message: (form.querySelector('#message') as HTMLTextAreaElement)?.value,
+        };
         setIsSubmitting(true);
-        // Simulate API call
-        setTimeout(() => {
+        try {
+            const res = await fetch(`${NODE_BASE_URL}/api/contact`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+            const result = await res.json();
+            if (!res.ok) throw new Error(result.message);
+            toast.success('Message sent! We\'ll get back to you shortly.');
+            form.reset();
+        } catch (err: any) {
+            toast.error(err.message || 'Failed to send message. Please try again.');
+        } finally {
             setIsSubmitting(false);
-            toast.success('Message sent! We will get back to you shortly.');
-            (e.target as HTMLFormElement).reset();
-        }, 1500);
+        }
     };
 
     return (
