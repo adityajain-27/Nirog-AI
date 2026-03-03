@@ -306,9 +306,9 @@ Built at **Phantasia 3.0** (24-hour Hackathon) — 🥈 2nd Place
 | Name | Role | GitHub |
 |---|---|---|
 | **Aditya Jain** (Lead) | Project architecture · Full-stack backend · Deployment | [@adityajain-27](https://github.com/adityajain-27) |
-| **Samay Parashar** | AI agent pipeline · AI integration | [@samay-username](https://github.com/samay722) |
+| **Samay Parashar** | AI agent pipeline · AI integration | [@samay722](https://github.com/samay722) |
 | **Sweety** | Frontend development · UI design · Testing & QA | [@Sweety3106](https://github.com/Sweety3106) |
-| **Hardik Agrawal** | Frontend development · UI design · Testing & QA | [@hardik-username](https://github.com/hardik-agrawal10) |
+| **Hardik Agrawal** | Frontend development · UI design · Testing & QA | [@hardik-agrawal10](https://github.com/hardik-agrawal10) |
 
 
 ---
