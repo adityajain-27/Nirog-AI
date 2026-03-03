@@ -1,5 +1,5 @@
 import express from 'express';
-import { Resend } from 'resend';
+import sgMail from '@sendgrid/mail';
 
 const router = express.Router();
 
@@ -10,11 +10,11 @@ router.post('/', async (req, res) => {
             return res.status(400).json({ message: 'Name, email and message are required.' });
         }
 
-        const resend = new Resend(process.env.RESEND_API_KEY);
+        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-        await resend.emails.send({
-            from: 'Nirog AI <onboarding@resend.dev>',
-            to: [process.env.CONTACT_EMAIL || 'niroghealthai@gmail.com'],
+        await sgMail.send({
+            from: process.env.SENDGRID_VERIFIED_SENDER || 'niroghealthai@gmail.com', // Must be verified in SendGrid
+            to: process.env.CONTACT_EMAIL || 'niroghealthai@gmail.com',
             replyTo: email,
             subject: `[Nirog AI Contact] ${subject || 'New message from ' + firstName}`,
             html: `

@@ -1,5 +1,5 @@
 import express from 'express';
-import { Resend } from 'resend';
+import sgMail from '@sendgrid/mail';
 import verifyToken from '../middlewares/auth.js';
 import IntakeRequest from '../models/intakeRequest.js';
 import DoctorPatient from '../models/doctorPatient.js';
@@ -8,8 +8,8 @@ const router = express.Router();
 const PYTHON_AI_URL = process.env.PYTHON_AI_URL || 'http://localhost:8000';
 const APP_URL = process.env.APP_URL || 'http://localhost:5173';
 
-function createResend() {
-  return new Resend(process.env.RESEND_API_KEY);
+function setupSendGrid() {
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 }
 
 function buildEmailHtml(patientName, doctorName, intakeUrl) {
@@ -114,11 +114,11 @@ router.post('/send', verifyToken, async (req, res) => {
     const intakeUrl = `${APP_URL}/intake/${intake.token}`;
     const doctorName = req.user.name || 'Your Doctor';
 
-    // Send email via Resend
-    const resend = createResend();
-    await resend.emails.send({
-      from: 'Nirog AI <onboarding@resend.dev>',
-      to: [patient.email],
+    // Send email via SendGrid
+    setupSendGrid();
+    await sgMail.send({
+      from: process.env.SENDGRID_VERIFIED_SENDER || 'niroghealthai@gmail.com', // Must be verified in SendGrid
+      to: patient.email,
       subject: `${doctorName} has requested your health assessment — Nirog AI`,
       html: buildEmailHtml(patient.name, doctorName, intakeUrl),
     });
