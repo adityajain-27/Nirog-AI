@@ -4,7 +4,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
-import { Loader2, Coins } from 'lucide-react';
+import { Loader2, Coins, ArrowLeft } from 'lucide-react';
 import { toast } from 'sonner';
 import { ThemeToggle } from '../components/ThemeToggle';
 import { useAuth } from '../hooks/useAuth';
@@ -54,6 +54,11 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 flex flex-col items-center justify-center p-6 relative">
+      <div className="absolute top-6 left-6">
+        <Link to="/" className="inline-flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
+          <ArrowLeft className="w-4 h-4" /> Back
+        </Link>
+      </div>
       <div className="absolute top-6 right-6">
         <ThemeToggle />
       </div>

@@ -1,5 +1,4 @@
 import { createBrowserRouter, Outlet, Navigate, useLocation } from 'react-router';
-import { AnimatePresence } from 'motion/react';
 import ChatbotWidget from './components/ChatbotWidget';
 import PageTransition from './components/PageTransition';
 
@@ -38,11 +37,9 @@ const RootLayout = () => {
   const location = useLocation();
   return (
     <>
-      <AnimatePresence mode="wait">
-        <PageTransition key={location.pathname}>
-          <Outlet />
-        </PageTransition>
-      </AnimatePresence>
+      <PageTransition key={location.pathname}>
+        <Outlet />
+      </PageTransition>
       <ChatbotWidget />
     </>
   );

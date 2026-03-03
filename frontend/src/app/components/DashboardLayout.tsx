@@ -26,7 +26,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from './ui/sidebar';
-import { mockDoctorProfile } from '../data/mockData';
+
 import { useTheme } from 'next-themes';
 import { useAuth } from '../hooks/useAuth';
 
@@ -40,7 +40,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   const navigate = useNavigate();
   const { resolvedTheme, setTheme } = useTheme();
   const { user, logout } = useAuth();
-  const subscription = mockDoctorProfile.subscription;
+  const subscription = { plan: 'PRO' };
 
   const navItems = [
     { path: '/doctor/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
@@ -118,13 +118,12 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         <SidebarFooter>
           <div className="space-y-2 p-2">
             <div className="rounded-lg bg-sidebar-accent/40 px-3 py-2">
-              <p className="text-xs font-semibold truncate">{user?.name || mockDoctorProfile.name}</p>
-              <p className="text-xs text-muted-foreground truncate">
-                {user?.position || mockDoctorProfile.specialty}
+              <p className="text-xs font-semibold truncate">
+                {user?.name ? (user.name.startsWith('Dr') ? user.name : `Dr. ${user.name}`) : ''}
               </p>
-              {user?.qualification && (
-                <p className="text-xs text-muted-foreground/70 truncate">{user.qualification}</p>
-              )}
+              <p className="text-xs text-muted-foreground truncate">
+                {user?.position || ''}
+              </p>
             </div>
 
             <Button
