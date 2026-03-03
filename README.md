@@ -23,13 +23,18 @@ A full-stack health assessment platform that enables doctors to run AI-powered t
 
 ## ✨ Features
 
+### Doctor Account
+- **Sign Up / Login** — Doctors register with their name, email, position, and qualification; authenticated via JWT
+- **500 Free Credits on Sign Up** — Every new doctor account starts with 500 AI credits, enough to run multiple assessments right away
+- **Credit-based Report Generation** — Each AI assessment consumes credits; doctors can top up via the in-app billing page (Razorpay)
+
 ### Doctor Dashboard
 - **AI Assessment** — Enter symptoms, medications, and optionally upload an image; the AI returns a triage colour, SOAP note, differential diagnosis with ICD-10 codes, drug interaction warnings, and red flags
 - **Patient Management** — Add and manage a patient list with demographics, medical history, and allergies
 - **Assessment History** — Browse all past AI reports per patient with full output preserved
 - **Patient Intake via Email** — Send a secure, tokenised link to the patient's email; once they fill it in, the AI runs automatically and the report lands in the doctor's dashboard
 - **Medical Chatbot** — Conversational assistant for general clinical questions
-- **Billing** — Subscription management via Razorpay
+- **Billing** — Purchase additional credits via Razorpay
 
 ### Patient Experience
 - **Smart Intake Form** — Mobile-friendly, branded form accessible via email link (no login required); expires after 7 days
