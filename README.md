@@ -9,13 +9,13 @@ A full-stack health assessment platform that enables doctors to run AI-powered t
 
 ## 🌐 Live Demo
 
-🚀 **[View Live Application](https://nirog-ai.vercel.app)** ← _replace with your URL_
+🚀 **[View Live Application](https://nirog-ai-iota.vercel.app/)**
 
 ### Demo Credentials
 
 | Role | Email | Password |
 |------|-------|----------|
-| 👨‍⚕️ Doctor | `demo@nirogai.com` | `demo1234` |
+| 👨‍⚕️ Doctor | `demo@gmail.com` | `demo1234` |
 
 > The demo account has pre-loaded patients and assessment history so you can explore the full dashboard without setting anything up.
 
