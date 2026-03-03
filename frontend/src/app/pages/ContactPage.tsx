@@ -15,14 +15,14 @@ const teamMembers = [
         linkedin: "https://www.linkedin.com/in/aditya-jain-32b310371/",
     },
     {
-        name: "Sweety",
-        email: "sweety.sweety_cs.h25@gla.ac.in",
-        linkedin: "https://www.linkedin.com/in/sweety-527189382/",
-    },
-    {
         name: "Samay Parashar",
         email: "samay.parashar_cs.h25@gla.ac.in",
         linkedin: "https://www.linkedin.com/in/samay-parashar-95833b382",
+    },
+    {
+        name: "Sweety",
+        email: "sweety.sweety_cs.h25@gla.ac.in",
+        linkedin: "https://www.linkedin.com/in/sweety-527189382/",
     },
     {
         name: "Hardik Aggarwal",
