@@ -302,7 +302,7 @@ This project is licensed under the MIT License.
 
 ## � Team
 
-Built at **[Phantasia 3.0]** — 🥈 2nd Place
+Built at **Phantasia 3.0** (24-hour Hackathon) — 🥈 2nd Place
 
 | Name | Role | GitHub |
 |---|---|---|
