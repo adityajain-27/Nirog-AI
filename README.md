@@ -300,10 +300,18 @@ This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+## � Team
 
-**Aditya Jain**
-- GitHub: [@adityajain-27](https://github.com/adityajain-27)
+Built at **[Hackathon Name]** — 🥈 2nd Place
+
+| Name | Role |
+|---|---|
+| **Aditya Jain** (Lead) | Project architecture · Full-stack backend · AI integration · Deployment |
+| **Samay Parashar** | AI agent pipeline (`files/`) |
+| **Sweety** | Frontend development · UI design |
+| **Hardik Agrawal** | Frontend development · UI design |
+
+- GitHub (Lead): [@adityajain-27](https://github.com/adityajain-27)
 
 ---
 
