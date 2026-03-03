@@ -306,10 +306,10 @@ Built at **[Hackathon Name]** — 🥈 2nd Place
 
 | Name | Role | GitHub |
 |---|---|---|
-| **Aditya Jain** (Lead) | Project architecture · Full-stack backend · AI integration · Deployment | [@adityajain-27](https://github.com/adityajain-27) |
-| **Samay Parashar** | AI agent pipeline (`files/`) | [@samay-username](https://github.com/samay-username) |
+| **Aditya Jain** (Lead) | Project architecture · Full-stack backend · Deployment | [@adityajain-27](https://github.com/adityajain-27) |
+| **Samay Parashar** | AI agent pipeline · AI integration | [@samay-username](https://github.com/samay722) |
 | **Sweety** | Frontend development · UI design · Testing & QA | [@Sweety3106](https://github.com/Sweety3106) |
-| **Hardik Agrawal** | Frontend development · UI design · Testing & QA | [@hardik-username](https://github.com/hardik-username) |
+| **Hardik Agrawal** | Frontend development · UI design · Testing & QA | [@hardik-username](https://github.com/hardik-agrawal10) |
 
 - GitHub (Lead): [@adityajain-27](https://github.com/adityajain-27)
 
