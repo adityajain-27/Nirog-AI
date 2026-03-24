@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'nirog-python-ai'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FDE5AF69EB934A3393DF38E0B8335795 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2CCA818E731549EDBD34690F9E4889D5 }}
