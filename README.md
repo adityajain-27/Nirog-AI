@@ -9,7 +9,7 @@ A full-stack health assessment platform that enables doctors to run AI-powered t
 
 ## 🌐 Live Demo
 
-🚀 **[View Live Application](https://nirog-ai-iota.vercel.app/)**
+🚀 **[View Live Application](https://gray-meadow-085af1100.2.azurestaticapps.net/)**
 
 ### Demo Credentials
 
